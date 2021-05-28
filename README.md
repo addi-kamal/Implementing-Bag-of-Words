@@ -2,7 +2,7 @@
 
 The Bag of Words Model is a very simple way of representing text data for a machine learning algorithm to understand. It has proven to be very effective in NLP problem domains like document classification.
 
-## Understanding the Bag of Words Model :
+## 1. Understanding the Bag of Words Model :
 
 To understand the bag of words Model, let's first start with the help of an example.
 
@@ -41,7 +41,7 @@ Now we just have to count the frequency of words appearing in each document and 
 
 In the above figure, it is shown that we just keep count of the number of times each word is occurring in a sentence.
 
-## Implementing Bag-of-Words Model With Python :
+## 2. Implementing Bag-of-Words Model With Python :
 
 First, let's import the required libraries :
 
@@ -53,7 +53,7 @@ import pandas as pd
 from collections import Counter 
  ```
  
-1. Data Preprocessing :
+### Data Preprocessing :
 
 ```Python
 # Sample text corpus
@@ -117,7 +117,7 @@ pprint.pprint(frequency_list)
  Counter({'hello': 2, 'call': 1, 'you': 1, 'tomorrow': 1})]
 ```
 
-## Implementing Bag of Words in scikit-learn
+## 3. Implementing Bag of Words in scikit-learn
 
 Sklearn provide us with an excellent function called CountVectorizer.
 
@@ -144,6 +144,6 @@ In the above code the CountVectorizer's fit transform method will create a matri
 | Call me now. | 0 |	1 |	0 |	0 |	0 |	0 |	1 |	0 |	1 |	0 |	0 |	0 |
 | Hello, Call hello you tomorrow? | 0 |	1 |	0 |	2 |	0 |	0 |	0 |	0 |	0 |	1 |	0 |	1 |
 
-## Conclusion :
+## 4. Conclusion :
 
 In this article, we saw how to implement the Bag of Words approach from scratch in Python and with Sklearn. The theory of the approach has been explained along with the hands-on code to implement the approach.

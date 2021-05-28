@@ -53,7 +53,7 @@ import pandas as pd
 from collections import Counter 
  ```
  
-### Data Preprocessing :
+* Data Preprocessing :
 
 ```Python
 # Sample text corpus
